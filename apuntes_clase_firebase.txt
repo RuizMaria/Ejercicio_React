@@ -1,0 +1,33 @@
+antes en el terminal de visual npm install actions
+
+Real time database
+No es sql
+copiar link y poner en el navegador agregar /productos.json
+ese sera el link que tendremos que poner en el código para acceder
+tendremos que usar la libreria nueva para acceder a la base de datos  axios
+axios.get(link) donde recoge la respuesta de la petición a la base de datos 
+
+
+
+CLASE ONLINE 28/02/2022
+en las reglas de firebase el write a true para poder modificar cualquier persona
+si requiere autenticacion
+write: auth!=null
+login no va a devolver primero un true (mas facil)
+y luego un token
+vamos a hacer el login con axios 
+oara cualquier cambio en la base de datos
+activar metodo de autenticacion correo elec +contraseña en fire base
+creamos un nuevo componete: login.js
+
+
+Desplegar en la nube a traves d fire base
+hosting y nos da una url en internet para distribuir
+pasos en el pdf del aulario firebase hosting 
+
+desde visual code primero hay que generar los ficheros para producción. Maypr optimizacion
+pasos en eñ pdf
+el install le cuesta un rato 
+npm run build y se generan los focheron es la carptea build
+es lo q el navegador va a cargar 
+lo ultimo es el paso 8

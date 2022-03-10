@@ -1,0 +1,1 @@
+primero el enrutado y luego ya la lógica de cada coponente etc
