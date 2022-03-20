@@ -1,5 +1,6 @@
 import './Header.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+
 
 function Header() {
     return (
@@ -9,13 +10,13 @@ function Header() {
                 {/* <a href="/">Inicio</a> | {'   '}
                 <a href="/sobre-nosotros">Quienes somos</a> | {'   '}
                 <a href="/productos">Nuestros productos</a> | {'   '}
-                <a href="/nuevo-producto">Nuevo producto</a> | {'   '}
                 <a href="/contacto">Contacto</a> */}
                 <Link to="/">Inicio</Link> | {'   '}
                 <Link to="/sobre-nosotros">Quienes somos</Link> | {'   '}
                 <Link to="/productos">Nuestros productos</Link> | {'   '}
                 <Link to="/nuevo-producto">Nuevo producto</Link> | {'   '}
-                <Link to="/contacto?p1=23&p2=3">Contacto</Link>
+                <Link to="/contacto?p1=23&p2=hola">Contacto</Link>
+
             </nav>
         </div>
     )

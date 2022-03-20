@@ -1,0 +1,16 @@
+**APP : prncipal
+	state
+	funcion para actualizar el carrito set
+	<p prop
+	carrito
+state:..
+
+**Productos
+	*producto
+	onclick: props y se actualiza en la principal 
+	
+
+
+
+*************************************************
+Importante añadir en el index BrowserRouter para que vaya el link 

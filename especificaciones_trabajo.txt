@@ -1,1 +1,2 @@
 primero el enrutado y luego ya la lógica de cada coponente etc
+para el historial hara falta crear una base de datos

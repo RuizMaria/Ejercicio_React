@@ -5,34 +5,35 @@ import NuevoProducto from './components/nuevoProducto/NuevoProducto';
 import Header from './components/UI/Header';
 import Footer from './components/UI/Footer';
 import Home from './components/contenido/Home';
-import About from './components/contenido/About';
-import Contact from './components/contenido/Contact';
-import ErrorPage from './components/contenido/ErrorPage';
 import { Routes, Route } from 'react-router-dom';
+import Contact from './components/contenido/Contact';
+import About from './components/contenido/About';
+import ErrorPage from './components/contenido/ErrorPage';
 import DetalleProducto from './components/productos/DetalleProducto';
+import EditarProducto from './components/editarProducto/EditarProducto';
 
 function App() {
 
-  const productos = [
-    {
-      id: 1,
-      nombre: 'Ratón óptico 1',
-      precio: 15.50,
-      fecha: new Date(2022, 2, 2)
-    },
-    {
-      id: 2,
-      nombre: 'Ratón óptico 2',
-      precio: 25.50,
-      fecha: new Date(2022, 2, 2)
-    },
-    {
-      id: 3,
-      nombre: 'Ratón óptico 3',
-      precio: 9.50,
-      fecha: new Date(2022, 2, 2)
-    },
-  ];
+  // const productos = [
+  //   {
+  //     id: 1,
+  //     nombre: 'Ratón óptico 1',
+  //     precio: 15.50,
+  //     fecha: new Date(2022, 2, 2)
+  //   },
+  //   {
+  //     id: 2,
+  //     nombre: 'Ratón óptico 2',
+  //     precio: 25.50,
+  //     fecha: new Date(2022, 2, 2)
+  //   },
+  //   {
+  //     id: 3,
+  //     nombre: 'Ratón óptico 3',
+  //     precio: 9.50,
+  //     fecha: new Date(2022, 2, 2)
+  //   },
+  // ];
 
   return (
     <>
@@ -40,8 +41,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre-nosotros" element={<About />} />
-        <Route path="/productos" element={<Productos productos={productos} />} />
+        <Route path="/productos" element={<Productos />} />
         <Route path="/productos/:id" element={<DetalleProducto />} />
+        <Route path="/productos/editar/:id" element={<EditarProducto />} />
         <Route path="/nuevo-producto" element={<NuevoProducto />} />
         <Route path="/contacto" element={<Contact />} />
         <Route path="*" element={<ErrorPage />} />
